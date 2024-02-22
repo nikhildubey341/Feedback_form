@@ -84,6 +84,7 @@ export default function Home() {
                   <p className="text-sm text-red-500">{formik.errors.name}</p>
                 )}
               </div>
+
               {/* Email */}
               <div className="pb-4">
                 <label htmlFor="email" className="block font-latoBold text-sm pb-2">
@@ -101,6 +102,7 @@ export default function Home() {
                   <p className="text-sm text-red-500">{formik.errors.email}</p>
                 )}
               </div>
+
               {/* Domain */}
               <div className="pb-4">
                 <label htmlFor="Domain" className="block font-latoBold text-sm pb-2">
@@ -116,12 +118,12 @@ export default function Home() {
                   <option value="Full Stack Development">Full Stack Development</option>
                   <option value="Mobile Application Development">Mobile Application Development</option>
                   <option value="Salesforce Development">Salesforce Development</option>
-
                 </select>
-                {formik.touched.Doamin && formik.errors.Doamin && (
+                {formik.touched.Domain && formik.errors.Domain && (
                   <p className="text-sm text-red-500">{formik.errors.Domain}</p>
                 )}
               </div>
+
               {/* Rating */}
               <div className="pb-4">
                 <label htmlFor="rating" className="block font-latoBold text-sm pb-2">
@@ -141,6 +143,7 @@ export default function Home() {
                   <p className="text-sm text-red-500">{formik.errors.rating}</p>
                 )}
               </div>
+
               {/* Your Feedback */}
               <div className="pb-4">
                 <label htmlFor="feedback" className="block font-latoBold text-sm pb-2">
@@ -157,6 +160,7 @@ export default function Home() {
                   <p className="text-sm text-red-500">{formik.errors.feedback}</p>
                 )}
               </div>
+
               {/* Select Files */}
               {/* Select Files */}
               <div className="pb-4">
@@ -204,6 +208,7 @@ export default function Home() {
               </div>
 
 
+
               {/* Terms */}
               <div className="pb-4">
                 <label htmlFor="terms" className="flex items-center">
@@ -222,24 +227,27 @@ export default function Home() {
                   <p className="text-sm text-red-500">{formik.errors.terms}</p>
                 )}
               </div>
+
               {/* Submit Button */}
               <button
-                type="submit"
-                className="bg-teal-500 font-latoBold text-sm text-white py-3 mt-6 rounded-lg w-full"
-              >
-                Submit
-              </button>
+              type="submit"
+              className="bg-teal-500 font-latoBold text-sm text-white py-3 mt-6 rounded-lg w-full"
+            >
+              Submit
+            </button>
+            
             </div>
           </div>
           <div className="relative flex-1">
-            <div className="w-full h-full rounded-lg overflow-hidden">
-              <Image
-                className="object-cover w-full h-full"
-                src={formImage}
-                alt="form-learn"
-              />
-            </div>
-          </div>
+  <div className="w-full h-full rounded-lg overflow-hidden">
+    <Image
+      className="object-cover w-full h-full"
+      src={formImage}
+      alt="form-learn"
+    />
+  </div>
+</div>
+
 
 
         </form>
